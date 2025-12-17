@@ -1,0 +1,86 @@
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+build/
+dist/
+*.log
+
+# ---- Virtualenv / env ----
+.venv/
+venv/
+env/
+ENV/
+.python-version
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+.profile_default/
+.ipython/
+
+# ---- Test / tooling ----
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ---- Secrets ----
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# ---- Data (KKBox 등 대용량 원본/중간 산출물) ----
+data/
+datasets/
+raw/
+interim/
+processed/
+external/
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.pkl
+*.pickle
+*.joblib
+*.h5
+*.hdf5
+*.npz
+
+# ---- Models / artifacts ----
+models/
+artifacts/
+mlruns/
+*.onnx
+
+# ---- Reports / outputs ----
+outputs/
+runs/
+logs/
+reports/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.pdf
+*.html
+
+# ---- Streamlit ----
+.streamlit/secrets.toml
+.streamlit/.cache/
