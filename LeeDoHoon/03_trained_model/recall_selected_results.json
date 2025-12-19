@@ -1,0 +1,158 @@
+{
+  "selected_model": "CatBoost",
+  "comparison": {
+    "LightGBM": {
+      "recall": 0.8896141074086797,
+      "roc_auc": 0.9830680460111709
+    },
+    "CatBoost": {
+      "recall": 0.9633573800526738,
+      "roc_auc": 0.9880724437291875
+    }
+  },
+  "optimal_threshold": 0.5779716991050209,
+  "valid_metrics_default": {
+    "roc_auc": 0.9880724437291875,
+    "pr_auc": 0.9224458308332925,
+    "recall": 0.9633573800526738,
+    "precision": 0.5324009619035565,
+    "f1": 0.6857958019156307,
+    "true_negative": 80974,
+    "false_positive": 7389,
+    "false_negative": 320,
+    "true_positive": 8413,
+    "specificity": 0.9163790274209793
+  },
+  "valid_metrics_optimal": {
+    "roc_auc": 0.9880724437291875,
+    "pr_auc": 0.9224458308332925,
+    "recall": 0.950074430321768,
+    "precision": 0.5876062322946176,
+    "f1": 0.7261191090885223,
+    "true_negative": 82540,
+    "false_positive": 5823,
+    "false_negative": 436,
+    "true_positive": 8297,
+    "specificity": 0.9341013772732931
+  },
+  "test_metrics_default": {
+    "roc_auc": 0.9883313870842096,
+    "pr_auc": 0.9222442712065348,
+    "recall": 0.9675369288904156,
+    "precision": 0.5282588308846514,
+    "f1": 0.6833953413134908,
+    "true_negative": 161635,
+    "false_positive": 15091,
+    "false_negative": 567,
+    "true_positive": 16899,
+    "specificity": 0.9146079241311409
+  },
+  "test_metrics_optimal": {
+    "roc_auc": 0.9883313870842096,
+    "pr_auc": 0.9222442712065348,
+    "recall": 0.9514485285697928,
+    "precision": 0.5817608962016454,
+    "f1": 0.7220351502248484,
+    "true_negative": 164779,
+    "false_positive": 11947,
+    "false_negative": 848,
+    "true_positive": 16618,
+    "specificity": 0.9323981757070267
+  },
+  "feature_importance": [
+    {
+      "feature": "days_to_expire",
+      "importance": 23.237425558332404
+    },
+    {
+      "feature": "payment_method_last",
+      "importance": 14.875338292920029
+    },
+    {
+      "feature": "cancel_count",
+      "importance": 11.914803965682461
+    },
+    {
+      "feature": "total_payment",
+      "importance": 11.549295614018744
+    },
+    {
+      "feature": "auto_renew_rate",
+      "importance": 10.02358323420369
+    },
+    {
+      "feature": "has_cancelled",
+      "importance": 6.736685105601884
+    },
+    {
+      "feature": "tenure_days",
+      "importance": 2.94299551246267
+    },
+    {
+      "feature": "avg_payment",
+      "importance": 2.899437288397376
+    },
+    {
+      "feature": "transaction_count",
+      "importance": 2.737642369837637
+    },
+    {
+      "feature": "avg_list_price",
+      "importance": 2.720399773326971
+    },
+    {
+      "feature": "avg_discount_rate",
+      "importance": 2.1073921432583194
+    },
+    {
+      "feature": "is_auto_renew_last",
+      "importance": 1.677159772862418
+    },
+    {
+      "feature": "active_days",
+      "importance": 0.9962740366331697
+    },
+    {
+      "feature": "plan_days_last",
+      "importance": 0.7137798320413458
+    },
+    {
+      "feature": "num_985_sum",
+      "importance": 0.4831101232532901
+    },
+    {
+      "feature": "skip_ratio",
+      "importance": 0.4583046549314672
+    },
+    {
+      "feature": "listening_variety",
+      "importance": 0.4497789735985352
+    },
+    {
+      "feature": "city",
+      "importance": 0.36233241865044113
+    },
+    {
+      "feature": "age",
+      "importance": 0.3265250124273139
+    },
+    {
+      "feature": "total_secs",
+      "importance": 0.2768830889628707
+    }
+  ],
+  "params": {
+    "loss_function": "Logloss",
+    "eval_metric": "AUC",
+    "learning_rate": 0.05,
+    "depth": 6,
+    "l2_leaf_reg": 3.0,
+    "random_seed": 42,
+    "iterations": 500,
+    "early_stopping_rounds": 50,
+    "thread_count": -1,
+    "scale_pos_weight": 15.177430436276193,
+    "verbose": 100
+  },
+  "best_iteration": 493
+}
